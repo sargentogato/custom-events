@@ -1,13 +1,16 @@
 <template>
   <div class="flex-col">
     <div class="flex gap-4 justify-around">
-      <h2>Notes</h2>
-      <p v-for="note in notes" :key="note">
-        {{ note }}
-      </p>
-
-      <h2>timeStamp</h2>
-      <div v-for="timeStamp in timeStamps">{{ timeStamp }}</div>
+      <div>
+        <h2 class="text-center">Notes</h2>
+        <p v-for="note in notes" :key="note">
+          {{ note }}
+        </p>
+      </div>
+      <div>
+        <h2 class="text-center">timeStamp</h2>
+        <div v-for="timeStamp in timeStamps">{{ timeStamp }}</div>
+      </div>
     </div>
 
     <Input @add-note="addNote" />
