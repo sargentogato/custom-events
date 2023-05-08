@@ -38,7 +38,7 @@ export default {
         console.error("Textarea element not found in refs!")
         return
       }
-      textarea.style.height = textarea.scrollHeight - 4 + "px"
+      textarea.style.height = textarea.scrollHeight + 2 + "px"
     },
   },
 }
